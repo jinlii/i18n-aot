@@ -7,15 +7,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
+    <h1>With AOT, you pass the information as a configuration</h1>
+    <p>French: ng serve --configuration=fr</p>
+    <p>English: ng serve</p>
 
+    <p>==========================================================================</p>
     <p>This app compiles with the AOT compiler!</p>
     You also need to instruct the AOT compiler to use your translation configuration.
     To do so, you configure the translation with three options in your <b>angular.json</b> file.
 
+<p>
+When you internationalize with the AOT compiler,
+you must pre-build a separate application package for each language and serve the appropriate package based on
+either server-side language detection or url parameters. <font color="red">?? How??</font>
+
+</p>
 <p>i18nFile: the path to the translation file.</p>
 <p>i18nFormat: the format of the translation file.</p>
 <p>i18nLocale: the locale id.</p>
-
+<p>==========================================================================</p>
     <app-root>Loading...</app-root>
   </body>
 </html>
